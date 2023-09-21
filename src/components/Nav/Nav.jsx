@@ -18,7 +18,7 @@ const Nav = () => {
           className={({ isActive }) =>
             isActive ? `${styles.link} ${styles.activeLink}` : styles.link
           }
-          to="/"
+          to="services"
         >
           Services
         </NavLink>
