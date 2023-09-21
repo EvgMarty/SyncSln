@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
+
+  .link {
+    position: relative;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: all 0.2s ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 46px;
+      height: 5px;
+      background: #000;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: url(../../../public/img/underline.svg);
+      background-size: cover;
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+    }
+
+    &:hover {
+      color: #003a74;
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  .activeLink {
+    color: #003a74;
+    opacity: 1;
+    &::before {
+      opacity: 1;
+    }
+  }
+}
