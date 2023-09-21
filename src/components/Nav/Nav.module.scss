@@ -2,8 +2,24 @@
   display: flex;
   align-items: center;
   column-gap: 45px;
+  transition: all .3s ease-in-out;
   @media (max-width: 650px) {
-    display: none;
+    position: absolute;
+    right: -651px;
+    top: 90px;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    z-index: 90;
+  
+
+    &.active{
+      right: 0;
+    }
   }
 
   .link {

@@ -1,14 +1,16 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Nav.module.scss';
-const Nav = () => {
+
+const Nav = ({ openMenu, closeMenu }) => {
   return (
-    <ul className={styles.nav}>
+    <ul className={`${styles.nav} ${openMenu ? styles.active : ''}`}>
       <li>
         <NavLink
           className={({ isActive }) =>
             isActive ? ` ${styles.link} ${styles.activeLink}` : styles.link
           }
           to="/"
+          onClick={() => closeMenu()}
         >
           Home
         </NavLink>
@@ -19,6 +21,7 @@ const Nav = () => {
             isActive ? `${styles.link} ${styles.activeLink}` : styles.link
           }
           to="services"
+          onClick={() => closeMenu()}
         >
           Services
         </NavLink>
@@ -29,6 +32,7 @@ const Nav = () => {
             isActive ? `${styles.link} ${styles.activeLink}` : styles.link
           }
           to="about-us"
+          onClick={() => closeMenu()}
         >
           About Us
         </NavLink>
@@ -39,6 +43,7 @@ const Nav = () => {
             isActive ? `${styles.link} ${styles.activeLink}` : styles.link
           }
           to="blog"
+          onClick={() => closeMenu()}
         >
           Blog
         </NavLink>
@@ -49,6 +54,7 @@ const Nav = () => {
             isActive ? `${styles.link} ${styles.activeLink}` : styles.link
           }
           to="contacts"
+          onClick={() => closeMenu()}
         >
           Contacts
         </NavLink>

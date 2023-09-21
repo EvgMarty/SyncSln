@@ -1,0 +1,32 @@
+.title {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-family: Circe;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+
+  @media (max-width: 650px) {
+    color: white;
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 82px;
+    background: url(../../../public/img/underlineW.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 8px;
+  }
+}

@@ -1,0 +1,22 @@
+.serviSection {
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .wrapCard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    justify-content: space-between;
+    row-gap: 30px;
+    column-gap: 30px;
+    padding: 15px 0;
+    margin-bottom: 140px;
+    @media (max-width: 650px) {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 90px;
+    }
+  }
+}
