@@ -3,9 +3,9 @@
   height: 770px;
   position: relative;
 
-    @media (max-width: 650px) {
-      height: 1000px;
-    }
+  @media (max-width: 650px) {
+    height: 1000px;
+  }
 
   .container {
     position: relative;
@@ -17,11 +17,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    overflow: hidden;
 
     @media (max-width: 650px) {
       align-items: center;
-      height: 820px;
+      padding-top: 150px;
     }
   }
 
@@ -94,7 +93,7 @@
     position: absolute;
     width: 137px;
     height: 140px;
-    left: 100px;
+    left: -81px;
     top: 128px;
     z-index: -9;
     @media (max-width: 650px) {
@@ -139,5 +138,41 @@
 
   .mt {
     margin-top: 50px;
+  }
+
+  .group {
+    position: absolute;
+    width: 137px;
+    height: 140px;
+    left: 81px;
+    bottom: 31px;
+    z-index: -9;
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  .eclipseR {
+    position: absolute;
+    width: 137px;
+    height: 140px;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  .eclipseL {
+    position: absolute;
+    width: 137px;
+    height: 140px;
+    top: 413px;
+    left: -14px;
+    z-index: -1;
+    @media (max-width: 650px) {
+      display: none;
+    }
   }
 }

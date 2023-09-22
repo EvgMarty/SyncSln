@@ -1,5 +1,7 @@
+import WriteToUs from "../../components/WriteToUs/WriteToUs";
+
 const Contacts = () => {
-  return <div>Contacts</div>;
+  return <div><WriteToUs /></div>;
 };
 
 export default Contacts;

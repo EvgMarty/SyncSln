@@ -1,0 +1,157 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+  margin: 33px 0;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+}
+
+.formWrap {
+  display: flex;
+  width: 100%;
+  column-gap: 24px;
+  justify-content: center;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+.formInput {
+  padding: 15px;
+  width: 350px;
+  height: 60px;
+  border-radius: 7px;
+  background: #fefefe;
+  box-shadow: 0px 2px 20px 0px rgba(0, 114, 161, 0.07);
+  color: #003a74;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  text-transform: capitalize;
+  z-index: 1;
+
+  @media (max-width: 650px) {
+    width: 100%;
+  }
+}
+
+.formInputText {
+  padding: 15px;
+  width: 100%;
+  height: 60px;
+  border-radius: 7px;
+  background: #fefefe;
+  box-shadow: 0px 2px 20px 0px rgba(0, 114, 161, 0.07);
+  color: #003a74;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+.formInput::placeholder {
+  color: #baccdf; /* Измените цвет на желаемый */
+}
+
+.checbocksGroup {
+  color: white;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 120%; /* 19.2px */
+  display: flex;
+  column-gap: 14px;
+  justify-content: center;
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  input[type='checkbox'] + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px; // Расстояние от круглого чекбокса до метки
+    cursor: pointer;
+  }
+
+  input[type='checkbox'] + label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #00a1e4;
+    background-color: white;
+    border-radius: 50%; // Делает круглый чекбокс
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  input[type='checkbox'] + label::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%; // Делает круглый чекбокс
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+
+  // Стили для отмеченного круглого чекбокса
+  input[type='checkbox']:checked + label::after {
+    background-color: #00a1e4; // Цвет фона круга при выборе
+  }
+}
+
+//Выпадающий список
+/* Стили для кастомного выпадающего списка */
+.customSelect {
+  position: relative;
+  padding: 15px;
+  width: 300px;
+  height: 60px;
+  color: #baccdf;
+  border-radius: 7px;
+  background: #fefefe;
+  box-shadow: 0px 2px 20px 0px rgba(0, 114, 161, 0.07);
+  z-index: 1;
+  padding-left: 50px;
+  appearance: none; /* Убираем стандартный стиль селекта */
+
+  @media (max-width: 650px) {
+    width: 100%;
+  }
+}
+
+/* Стили для опций в кастомном селекте */
+.customSelect option {
+  font-size: 18px;
+  padding: 15px;
+  color: #003a74;
+  background-color: #fefefe;
+  z-index: 0;
+}
+
+/* Стили для выбранной опции */
+.customSelect option:checked {
+  background-color: #baccdf;
+  color: #fff;
+}
+

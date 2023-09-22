@@ -13,10 +13,13 @@
     column-gap: 30px;
     padding: 15px 0;
     margin-bottom: 140px;
-    @media (max-width: 650px) {
+
+        
+    @media (max-width: 1080px) {
       align-items: center;
       justify-content: center;
       margin-bottom: 90px;
     }
+
   }
 }
