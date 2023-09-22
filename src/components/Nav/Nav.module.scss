@@ -3,6 +3,7 @@
   align-items: center;
   column-gap: 45px;
   transition: all 0.3s ease-in-out;
+  
   @media (max-width: 650px) {
     opacity: 0;
     position: fixed;
@@ -15,8 +16,6 @@
     align-items: center;
     justify-content: center;
     row-gap: 30px;
-    z-index: 90;
-
     &.active {
       opacity: 1;
       right: 0;

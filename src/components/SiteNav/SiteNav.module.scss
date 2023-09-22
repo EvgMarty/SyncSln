@@ -1,0 +1,24 @@
+.siteNav {
+  position: absolute;
+  left: 0;
+  top: 90px;
+  column-gap: 10px;
+  display: flex;
+  z-index: 1;
+
+  @media (max-width: 1150px) {
+    left: 25px;
+  }
+
+  li {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    &:last-child {
+      color: #00a1e4;
+    }
+  }
+}

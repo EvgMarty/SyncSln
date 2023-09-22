@@ -1,0 +1,47 @@
+.contHead {
+  position: relative;
+  height: 450px;
+  width: 100%;
+
+  @media (max-width: 650px) {
+    height:380px;
+  }
+
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .contBg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    top: 0;
+
+    @media (max-width: 650px) {
+      top: 100px;
+      width: 90%;
+    }
+  }
+
+  .ellipseR {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  .cloudL {
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+}

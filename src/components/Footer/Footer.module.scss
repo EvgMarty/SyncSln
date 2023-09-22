@@ -11,12 +11,16 @@
     flex-wrap: wrap;
     align-items: flex-start;
     column-gap: 100px;
+    row-gap: 26px;
 
+    @media (max-width: 1124px) {
+      justify-content: center;
+    }
+    
     @media (max-width: 650px) {
       padding: 40px 20px 115px 20px;
       flex-direction: column;
       align-content: center;
-      row-gap: 26px;
     }
 
     .siteMap {
@@ -26,6 +30,12 @@
       column-gap: 100px;
       row-gap: 15px;
       flex-wrap: wrap;
+
+      @media (max-width: 1124px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       li {
         color: #fff;
         font-size: 14px;
@@ -51,6 +61,11 @@
       row-gap: 15px;
       flex-wrap: wrap;
 
+      @media (max-width: 1124px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       li {
         display: flex;
         column-gap: 8px;
@@ -73,7 +88,7 @@
 
     .logoFoot {
       @media (max-width: 650px) {
-       width: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
