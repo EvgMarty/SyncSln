@@ -5,8 +5,13 @@ import styles from './Map.module.scss';
 const Map = () => {
   return (
     <div className={styles.map}>
+      <img
+        className={styles.groupImgg}
+        src="./img/contacts/cloudL.svg"
+        alt=""
+      />
       <div className={styles.container}>
-        <img  className={styles.groupImg} src="./img/header/Group.svg" alt="" />
+        <img className={styles.groupImg} src="./img/header/Group.svg" alt="" />
         <TitleBl>Contacts</TitleBl>
         <ParagraphBl>Here are some more hints on how to find us</ParagraphBl>
         <ul className={styles.dataList}>

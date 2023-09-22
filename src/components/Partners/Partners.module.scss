@@ -13,6 +13,10 @@
     flex-direction: column;
     row-gap: 25px;
     align-items: center;
+
+    @media (max-width: 768px) {
+      padding: 0 25px;
+    }
   }
 
   .partnBg {

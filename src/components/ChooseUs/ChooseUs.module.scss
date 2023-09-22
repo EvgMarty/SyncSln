@@ -1,0 +1,41 @@
+.chose {
+  position: relative;
+  text-align: center;
+  padding: 50px 0 110px 0;
+  background: linear-gradient(180deg, #0e5dac -0.77%, #0a4581 98.77%);
+
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    position: relative;
+
+    @media (max-width: 768px) {
+      padding: 0 25px;
+    }
+  }
+
+  .chooseBgL {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .chooseBgR {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+  }
+
+  .cloudWrapTop {
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 25px;
+    column-gap: 30px;
+  }
+
+  .cloudWrapBot {
+  }
+}

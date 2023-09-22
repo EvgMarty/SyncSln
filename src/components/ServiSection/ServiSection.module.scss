@@ -3,6 +3,10 @@
     max-width: 1150px;
     margin: 0 auto;
     text-align: center;
+
+    @media (max-width: 768px) {
+      padding: 0 25px;
+    }
   }
   .wrapCard {
     display: flex;
@@ -14,13 +18,10 @@
     padding: 15px 0;
     margin-bottom: 140px;
 
-        
     @media (max-width: 1080px) {
       align-items: center;
       justify-content: center;
       margin-bottom: 90px;
     }
-
-
   }
 }

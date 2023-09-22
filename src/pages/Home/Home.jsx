@@ -1,3 +1,4 @@
+import ChooseUs from '../../components/ChooseUs/ChooseUs';
 import ContactUs from '../../components/ContactUs/ContactUs';
 import Header from '../../components/Header/Header';
 import Partners from '../../components/Partners/Partners';
@@ -8,6 +9,7 @@ const Home = () => {
     <>
       <Header />
       <ServiSection />
+      <ChooseUs />
       <Partners />
       <ContactUs />
     </>
