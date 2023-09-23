@@ -31,7 +31,7 @@ const Nav = ({ openMenu, closeMenu }) => {
           className={({ isActive }) =>
             isActive ? `${styles.link} ${styles.activeLink}` : styles.link
           }
-          to="about-us"
+          to="a"
           onClick={() => closeMenu()}
         >
           About Us

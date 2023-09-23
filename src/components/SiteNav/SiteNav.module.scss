@@ -6,6 +6,11 @@
   display: flex;
   z-index: 1;
 
+  @media (max-width: 650px) {
+    display: none
+    ;
+  }
+
   @media (max-width: 1150px) {
     left: 25px;
   }

@@ -1,0 +1,42 @@
+.sectionPolicy {
+  position: relative;
+  width: 100%;
+  padding: 0 0 50px 0;
+
+  .cloudL {
+    position: absolute;
+    left: -53px;
+    top: 553px;
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  .cloudR {
+    position: absolute;
+    right: -53px;
+    top: 353px;
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  .numImg {
+    position: absolute;
+    right: -253px;
+    top: 553px;
+    @media (max-width: 650px) {
+      right: 0;
+      top: 250px;
+    }
+  }
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    position: relative;
+
+    @media (max-width: 768px) {
+      padding: 0 25px;
+    }
+  }
+}

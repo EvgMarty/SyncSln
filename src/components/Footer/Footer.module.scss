@@ -16,7 +16,7 @@
     @media (max-width: 1124px) {
       justify-content: center;
     }
-    
+
     @media (max-width: 650px) {
       padding: 40px 20px 115px 20px;
       flex-direction: column;
@@ -107,12 +107,25 @@
     }
 
     .titleFooter {
+      position: relative;
       color: #fff;
       font-size: 18px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       text-transform: uppercase;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        border-radius: 6px;
+        background: #fff;
+        left: 0;
+        bottom: -5px;
+      }
     }
   }
 

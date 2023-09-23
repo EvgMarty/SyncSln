@@ -1,0 +1,64 @@
+.sectionBlue {
+  position: relative;
+  padding: 50px 0 50px 0;
+  background: linear-gradient(180deg, #0e5dac -0.77%, #0a4581 98.77%);
+  z-index: 6;
+
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    position: relative;
+
+    @media (max-width: 768px) {
+      padding: 0 25px;
+    }
+  }
+
+  .chooseBgL {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -2;
+
+    @media (max-width: 1820px) {
+      left: -135px;
+    }
+    @media (max-width: 768px) {
+      left: -196px;
+    }
+
+    @media (max-width: 450px) {
+      left: -250px;
+    }
+  }
+  .chooseBgR {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+
+    @media (max-width: 1820px) {
+      right: -135px;
+    }
+
+    @media (max-width: 768px) {
+      right: -196px;
+    }
+
+    @media (max-width: 450px) {
+      right: -250px;
+    }
+  }
+
+  .groupW {
+    position: absolute;
+    right: 50px;
+    top: -40px;
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+}

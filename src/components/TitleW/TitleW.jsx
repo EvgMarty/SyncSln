@@ -1,4 +1,4 @@
-import styles from './TitleW.module.scss'
+import styles from './TitleW.module.scss';
 
 const TitleW = ({ children }) => {
   return <span className={styles.title}>{children}</span>;

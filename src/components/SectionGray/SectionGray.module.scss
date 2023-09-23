@@ -1,0 +1,30 @@
+.sectionBlue {
+  position: relative;
+  padding: 15px 0 15px 0;
+  background: linear-gradient(
+      57deg,
+      rgba(25, 84, 142, 0.2) 20.47%,
+      rgba(52, 132, 212, 0.2) 66.49%
+    ),
+    #f8fdff;
+
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    position: relative;
+
+    @media (max-width: 768px) {
+      padding: 0 25px;
+    }
+  }
+
+  .group {
+    position: absolute;
+    right: 50px;
+    top: 250px;
+
+    @media (max-width: 1400px) {
+      display: none;
+    }
+  }
+}
