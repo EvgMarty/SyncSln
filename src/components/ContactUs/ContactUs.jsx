@@ -8,6 +8,7 @@ const ContactUs = () => {
     <div className={styles.contactUs}>
       <img className={styles.contactBg} src="./img/contactUs.svg" alt="" />
       <div className={styles.container}>
+      <img className={styles.group} src="./img/header/Group.svg" alt="" />
         <TitleW>Contact Us</TitleW>
         <ParagraphW>
           If you have any question, request or offer – write us here. I consent

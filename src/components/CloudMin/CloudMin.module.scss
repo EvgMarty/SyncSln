@@ -1,0 +1,122 @@
+.cloud {
+  position: relative;
+  height: 186px;
+  width: 240px;
+  text-align: center;
+
+  &:nth-child(1) {
+    margin-top: 50px;
+  }
+
+  &:nth-child(3) {
+    margin-top: 50px;
+  }
+  @media (max-width: 1132px) {
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+
+  .cloudBg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+  }
+
+  .cloudTop {
+    height: 40%;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 15px;
+      width: 74px;
+      height: 2px;
+      background: white;
+    }
+  }
+
+  .number {
+    position: absolute;
+    left: 50%;
+    top: -85px;
+    transform: translateX(-50%);
+
+    color: #fff;
+    text-align: center;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    &::before {
+      content: attr(data-number);
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 72px;
+      color: transparent;
+      background-color: transparent;
+      -webkit-text-stroke: 0.2px white;
+      opacity: 0.3;
+      z-index: -1;
+    }
+  }
+
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 23px;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.96px;
+    text-transform: capitalize;
+  }
+
+  .text {
+    margin: 0 auto;
+    width: 195px;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 15.6px */
+  }
+
+  &:nth-child(3) {
+    .title {
+      font-size: 16px;
+      top: 12px;
+    }
+
+    .text {
+      font-size: 10px;
+    }
+  }
+
+  &:nth-child(4) {
+    .title {
+      font-size: 16px;
+      top: 12px;
+    }
+
+    .text {
+      font-size: 10px;
+    }
+  }
+}

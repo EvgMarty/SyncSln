@@ -28,5 +28,13 @@
     width: 100%;
   }
 
+  .group {
+    position: absolute;
+    right: 115px;
+    bottom: -60px;
 
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
 }

@@ -7,6 +7,7 @@ const Partners = () => {
   return (
     <div className={styles.partners}>
       <div className={styles.container}>
+        <img className={styles.group} src="./img/header/Group.svg" alt="" />
         <div className={styles.partnBg}>
           <TitleBl>Our Partners</TitleBl>
         </div>

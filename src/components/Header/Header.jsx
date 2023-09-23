@@ -11,11 +11,11 @@ const Header = () => {
         alt=""
       />
       <img className={styles.drop} src="./img/header/drop.svg" alt="" />
-      <img className={styles.group} src="./img/header/Group.svg" alt="" />
-      <img className={styles.group} src="./img/header/Group.svg" alt="" />
+
       <img className={styles.eclipseR} src="./img/header/eclipseR.svg" alt="" />
       <img className={styles.eclipseL} src="./img/header/eclipseL.svg" alt="" />
       <div className={styles.container}>
+        <img className={styles.group} src="./img/header/Group.svg" alt="" />
         <img className={styles.cloud} src="./img/header/cloud.svg" alt="" />
         <img
           className={styles.headerTitle}

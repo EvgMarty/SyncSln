@@ -6,6 +6,7 @@
     padding: 40px 0;
   }
   .container {
+    position: relative;
     max-width: 1150px;
     margin: 0 auto;
     text-align: center;
@@ -34,5 +35,12 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+  }
+
+  .group {
+    position: absolute;
+    left: -459px;
+    top: 569px;
+    transform: rotate(90deg);
   }
 }
