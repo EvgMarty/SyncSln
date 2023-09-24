@@ -1,7 +1,27 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import styles from './Nav.module.scss';
 
 const Nav = ({ openMenu, closeMenu }) => {
+  const navigate = useNavigate();
+
+  const scrollToServices = () => {
+    navigate('/');
+    const servicesSection = document.getElementById('services');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    closeMenu(); // Закройте меню после прокрутки
+  };
+
+  const scrollToAboutUs = () => {
+    navigate('/');
+    const servicesSection = document.getElementById('aboutUs');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    closeMenu(); // Закройте меню после прокрутки
+  };
+
   return (
     <ul className={`${styles.nav} ${openMenu ? styles.active : ''}`}>
       <li>
@@ -16,37 +36,19 @@ const Nav = ({ openMenu, closeMenu }) => {
         </NavLink>
       </li>
       <li>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? `${styles.link} ${styles.activeLink}` : styles.link
-          }
-          to="services"
-          onClick={() => closeMenu()}
-        >
+        <div className={styles.link} onClick={scrollToServices}>
           Services
-        </NavLink>
+        </div>
       </li>
       <li>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? `${styles.link} ${styles.activeLink}` : styles.link
-          }
-          to="a"
-          onClick={() => closeMenu()}
-        >
-          About Us
-        </NavLink>
+        <div className={styles.link} onClick={scrollToAboutUs}>
+          Abouy Us
+        </div>
       </li>
       <li>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? `${styles.link} ${styles.activeLink}` : styles.link
-          }
-          to="blog"
-          onClick={() => closeMenu()}
-        >
+        <div className={styles.link} onClick={() => closeMenu()}>
           Blog
-        </NavLink>
+        </div>
       </li>
       <li>
         <NavLink

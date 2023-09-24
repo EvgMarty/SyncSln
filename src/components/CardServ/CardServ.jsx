@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import styles from './CardServ.module.scss';
+import { Link } from 'react-router-dom';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 
 const CardServ = ({ service }) => {

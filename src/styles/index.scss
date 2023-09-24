@@ -2,7 +2,8 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  &.hidden{
+  scroll-behavior: smooth;
+  &.hidden {
     overflow: hidden;
   }
 }

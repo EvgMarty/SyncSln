@@ -5,7 +5,7 @@ import styles from './ChooseUs.module.scss';
 
 const ChooseUs = () => {
   return (
-    <div className={styles.chose}>
+    <div id="aboutUs" className={styles.chose}>
       <img
         className={styles.chooseBgL}
         src="./img/choose/chooseBgL.svg"

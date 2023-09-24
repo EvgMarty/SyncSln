@@ -1,0 +1,11 @@
+.wrapFlex {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 22px;
+  row-gap: 52px;
+
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}

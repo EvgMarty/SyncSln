@@ -1,0 +1,85 @@
+.tabCard {
+  position: relative;
+  display: flex;
+  column-gap: 55px;
+
+  cursor: pointer;
+  width: 554px;
+  height: 165px;
+  padding: 40px 60px;
+  color: black;
+  border-radius: 7px;
+
+  background: linear-gradient(180deg, #fefefe -0.77%, #fefefe 100%);
+  box-shadow: 0px 4px 30px 0px rgba(0, 149, 211, 0.35);
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    color: white;
+    background: linear-gradient(180deg, #1873ce -0.77%, #053b72 100%);
+
+    .cardTitle {
+      &::before {
+        background: #fff;
+      }
+    }
+
+    .circle {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.rightWrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+
+  .cardTitle {
+    position: relative;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.88px;
+    text-transform: capitalize;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: #00a1e4;
+      width: 222px;
+      height: 1px;
+      bottom: -3px;
+      left: 0;
+    }
+  }
+
+  .cardText {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 136.5%; /* 17.745px */
+  }
+}
+
+.circle {
+  transition: all .2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 23px;
+  bottom: -26px;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  background: #003a74;
+
+  .arrowRight {
+    color: white;
+    width: 30px;
+    height: 30px;
+  }
+}

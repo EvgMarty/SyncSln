@@ -3,6 +3,18 @@ import styles from './Header.module.scss';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 
 const Header = () => {
+  
+  const scrollToSection = () => {
+    const targetSection = document.getElementById('contactUs');
+
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <header className={styles.header}>
       <img
@@ -28,7 +40,7 @@ const Header = () => {
           <li>Employing Cloud Solutions to solve business challenges</li>
           <li>Applying AI & ML to utilize specific demands</li>
         </ul>
-        <Button customClass="mt">
+        <Button onClick={scrollToSection}>
           Contact Us <MdKeyboardArrowRight className={styles.arrowRight} />
         </Button>
       </div>

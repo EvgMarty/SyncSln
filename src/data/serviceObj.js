@@ -4,7 +4,7 @@ const services = [
   {
     id: id++,
     img: './img/ServicesCard/Software.svg',
-    link: 's~oftware-architecture',
+    link: 'architecture-development',
     title: 'Software architecture',
     li_1: 'Developing from scratch',
     li_2: 'Revision & Advisory',
@@ -22,7 +22,7 @@ const services = [
   {
     id: id++,
     img: './img/ServicesCard/AIML.svg',
-    link: 'ai-ml',
+    link: 'software-architecture',
     title: 'AI/ML',
     li_1: 'Recognition',
     li_2: 'Intelligent Automation',
@@ -30,8 +30,8 @@ const services = [
   },
   {
     id: id++,
-    img: './img/ServicesCard/Software.svg',
-    link: 'iot',
+    img: './img/ServicesCard/IoT.svg',
+    link: 'internet-of-things',
     title: 'IoT',
     li_1: 'Standalone device software',
     li_2: 'Network & Automation',

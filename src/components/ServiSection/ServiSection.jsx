@@ -6,7 +6,7 @@ import serviceObj from '../../data/serviceObj';
 
 const ServiSection = () => {
   return (
-    <div className={styles.serviSection}>
+    <div id="services" className={styles.serviSection}>
       <div className={styles.container}>
         <TitleBl>Our services</TitleBl>
         <ParagraphBl>
