@@ -1,5 +1,5 @@
-import SiteNav from '../SiteNav/SiteNav';
 import styles from './ContactsHeader.module.scss';
+import SiteNav from '../SiteNav/SiteNav';
 
 const ContactsHeader = () => {
   return (
@@ -12,6 +12,11 @@ const ContactsHeader = () => {
       <img
         className={styles.ellipseR}
         src="./img/contacts/ellipseR.svg"
+        alt=""
+      />
+      <img
+        className={styles.ellipse}
+        src="./img/contacts/Ellipse.svg"
         alt=""
       />
       <img className={styles.cloudL} src="./img/contacts/cloudL.svg" alt="" />

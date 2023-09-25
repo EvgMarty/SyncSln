@@ -5,6 +5,7 @@ const TabCard = (props) => {
   const { img, title, text } = props;
   return (
     <div className={styles.tabCard}>
+      <img className={styles.corner} src="./img/tabCard/corner.svg" alt="" />
       <img className={styles.cardImg} src={img} alt="" />
       <div className={styles.rightWrap}>
         <span className={styles.cardTitle}>{title}</span>

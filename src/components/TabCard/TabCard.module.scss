@@ -2,30 +2,72 @@
   position: relative;
   display: flex;
   column-gap: 55px;
+  align-items: center;
+  
 
   cursor: pointer;
-  width: 554px;
-  height: 165px;
+  max-width: 554px;
+  min-height: 165px;
+  max-height:150px;
   padding: 40px 60px;
-  color: black;
   border-radius: 7px;
 
+  color: #003a74;
   background: linear-gradient(180deg, #fefefe -0.77%, #fefefe 100%);
   box-shadow: 0px 4px 30px 0px rgba(0, 149, 211, 0.35);
-  transition: all 0.1s ease-in-out;
 
+  @media (max-width: 650px) {
+    max-height: 231px;
+  }
+
+  // если класс актив
+  &_active {
+    position: relative;
+    display: flex;
+    column-gap: 55px;
+    align-items: center;
+
+    cursor: pointer;
+    max-width: 554px;
+    min-height: 165px;
+    max-height: 231px;
+    padding: 40px 60px;
+    border-radius: 7px;
+
+    color: white;
+    background: linear-gradient(180deg, #1873ce -0.77%, #053b72 100%);
+    box-shadow: 0px 4px 30px 0px rgba(0, 149, 211, 0.35);
+
+    .cardTitle {
+      border-bottom: solid 1px #fff;
+    }
+
+    .cardImg {
+      filter: brightness(0) invert(1);
+    }
+
+    .circle {
+      transform: rotate(90deg);
+      background: #003a74;
+    }
+  }
+
+  //Наведение на елемент
   &:hover {
     color: white;
     background: linear-gradient(180deg, #1873ce -0.77%, #053b72 100%);
 
     .cardTitle {
-      &::before {
-        background: #fff;
-      }
+      border-bottom: solid 1px #fff;
+    }
+
+    .cardImg {
+      filter: brightness(0) invert(1);
     }
 
     .circle {
       transform: rotate(90deg);
+      background: #003a74;
     }
   }
 }
@@ -43,17 +85,7 @@
     line-height: normal;
     letter-spacing: -0.88px;
     text-transform: capitalize;
-
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      background: #00a1e4;
-      width: 222px;
-      height: 1px;
-      bottom: -3px;
-      left: 0;
-    }
+    border-bottom: solid 1px #00a1e4;
   }
 
   .cardText {
@@ -65,7 +97,7 @@
 }
 
 .circle {
-  transition: all .2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,11 +107,22 @@
   border-radius: 50%;
   width: 52px;
   height: 52px;
-  background: #003a74;
+  background: #00a1e4;
 
   .arrowRight {
     color: white;
     width: 30px;
     height: 30px;
   }
+}
+
+.cardImg {
+  position: relative;
+}
+
+.corner{
+  position: absolute;
+  height: 100%;
+  right: 0;
+  bottom: -2px;
 }

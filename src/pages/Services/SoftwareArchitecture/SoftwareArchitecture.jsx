@@ -1,27 +1,31 @@
 import styles from './SoftwareArchitecture.module.scss';
-import HeaderServ from '../../../components/HeaderServ/HeaderServ';
 import SectionSimple from '../../../components/SectionSimple/SectionSimple';
 import WrapFlex from '../../../components/WrapFlex/WrapFlex';
 import TabCard from '../../../components/TabCard/TabCard';
+import HeaderAI from '../../../components/HeaderAI/HeaderAI';
 
 const SoftwareArchitecture = () => {
   return (
     <>
-      <HeaderServ
-        img="./img/servHeader/Ai.svg"
-        page="Software Architecture"
-        title="AI services"
-        text="Employing Artificial Intelligence is smart and efficient way to reduce routine processes. However, AI allows huge amount of date to be aggregated in seconds and came up with a unique solution, saving tremendous amount of time to be spent on research."
-      />
+      <HeaderAI />
+
       <SectionSimple>
         <div className={styles.titleTab}>
           Our company provides services in following directions
         </div>
+        <WrapFlex>
+          <TabCard
+            img="./img/tabCard/AIML/AIML.svg"
+            title="AI & ML solutions development"
+            text="Artificial Intelligence and Machine learning has lots of applications"
+          />
+          <TabCard
+            img="./img/tabCard/AIML/botServices.svg"
+            title="Bot Services"
+            text="Leave common, predictable and boring tasks to bots."
+          />
+        </WrapFlex>
       </SectionSimple>
-
-      <WrapFlex>
-        <TabCard />
-      </WrapFlex>
     </>
   );
 };

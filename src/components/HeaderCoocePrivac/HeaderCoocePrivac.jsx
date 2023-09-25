@@ -1,5 +1,5 @@
-import SiteNav from '../SiteNav/SiteNav';
 import styles from './HeaderCoocePrivac.module.scss';
+import SiteNav from '../SiteNav/SiteNav';
 
 const HeaderCoocePrivac = (props) => {
   const { page, img } = props;

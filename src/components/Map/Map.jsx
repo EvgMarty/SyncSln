@@ -1,6 +1,7 @@
+import styles from './Map.module.scss';
 import ParagraphBl from '../ParagraphBl/ParagraphBl';
 import TitleBl from '../TitleBl/TitleBl';
-import styles from './Map.module.scss';
+import GoogleMap from '../GoogleMap/GoogleMap';
 
 const Map = () => {
   return (
@@ -21,7 +22,8 @@ const Map = () => {
               <div className={styles.circle}>
                 <img src="./img/contacts/tag.svg" alt="" />
               </div>
-              <p>Germany, Münster</p>
+              <p>Schräderheide 55 48157</p>
+              <p>Münster Germany</p>
             </div>
           </li>
           <li>
@@ -30,7 +32,7 @@ const Map = () => {
               <div className={styles.circle}>
                 <img src="./img/contacts/mail.svg" alt="" />
               </div>
-              <p>info@itegronic.com</p>
+              <p>info@syncsln.com</p>
             </div>
           </li>
           <li>
@@ -39,7 +41,9 @@ const Map = () => {
               <div className={styles.circle}>
                 <img src="./img/contacts/tag.svg" alt="" />
               </div>
-              <p>Spain, Valencia</p>
+              <p>Spain, Alicante</p>
+              <p>Poland, Warsaw</p>
+              <p>Ukraine, Kyiv</p>
             </div>
           </li>
           <li>
@@ -48,21 +52,13 @@ const Map = () => {
               <div className={styles.circle}>
                 <img src="./img/contacts/clock.svg" alt="" />
               </div>
-              <p>+34 652 04 49 77</p>
-              <p>+49 1523 2061840</p>
+              <a href="tel:+4915232061-840">+49 152 32 061-840</a>
+              <a href="tel:+4925176025-196">+49 251 76 025-196</a>
             </div>
           </li>
         </ul>
         <div className={styles.mapWrap}>
-          <iframe
-            className={styles.googleMap}
-            title="Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20327.493003011507!2d30.5828727!3d50.4422811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf8b2a37fe91%3A0xeb28c7dc78275ed2!2z0YPQuy4g0K3QvdGC0YPQt9C40LDRgdGC0L7QsiwgMzEsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1695406102432!5m2!1sru!2sua"
-            frameBorder="0"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <GoogleMap />
         </div>
       </div>
     </div>

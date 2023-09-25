@@ -1,27 +1,46 @@
 import styles from './CloudServices.module.scss';
-import HeaderServ from '../../../components/HeaderServ/HeaderServ';
 import SectionSimple from '../../../components/SectionSimple/SectionSimple';
 import WrapFlex from '../../../components/WrapFlex/WrapFlex';
 import TabCard from '../../../components/TabCard/TabCard';
+import HeaderCloud from '../../../components/HeaderCloud/HeaderCloud';
 
 const CloudServices = () => {
   return (
     <>
-      <HeaderServ
-        img="./img/servHeader/Cloud.svg"
-        page="Cloud Services"
-        title="Cloud Services"
-        text="If it touches the Cloud, we can do it. Cloudtime365 possesses high proficiency in Designing, Re-designing, Technical Advisory, and supervision of customers’ cloud solutions, as well as creating brand new ones from the scratch."
-      />
+      <HeaderCloud />
+
       <SectionSimple>
         <div className={styles.titleTab}>
           Our company provides services in following directions
         </div>
+        <WrapFlex>
+          <TabCard
+            img="./img/tabCard/Cloud/cloudDevelopment.svg"
+            title="Cloud development"
+            text="Cloud solutions demonstrate an extreme level of reliability, performance, and security"
+          />
+          <TabCard
+            img="./img/tabCard/Cloud/cloudArchitecture.svg"
+            title="Cloud architecture"
+            text="Software Architecture is the chassis of your vehicle"
+          />
+          <TabCard
+            img="./img/tabCard/Cloud/cloudMigration.svg"
+            title="Cloud migration"
+            text="The necessity of having expensive space-consuming server hardware is long gone"
+          />
+          <TabCard
+            img="./img/tabCard/Cloud/hybridCoud.svg"
+            title="Hybrid cloud"
+            text="Sometimes specific issues demand unique solutions"
+          />
+          <TabCard
+            img="./img/tabCard/Cloud/cloudDataServices.svg"
+            title="Cloud Data Services"
+            text="A well-designed and implemented database is a key to performance and security"
+          />
+        </WrapFlex>
       </SectionSimple>
-
-      <WrapFlex>
-        <TabCard />
-      </WrapFlex>
     </>
   );
 };

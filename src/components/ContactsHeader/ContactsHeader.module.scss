@@ -4,7 +4,7 @@
   width: 100%;
 
   @media (max-width: 650px) {
-    height:380px;
+    height: 348px;
   }
 
   .container {
@@ -15,14 +15,14 @@
 
   .contBg {
     position: absolute;
-    left: 50%;
+    left: 48%;
     transform: translateX(-50%);
     object-fit: cover;
     top: 0;
 
     @media (max-width: 650px) {
-      top: 100px;
-      width: 90%;
+      top: 85px;
+      width: 87%;
     }
   }
 
@@ -42,6 +42,19 @@
 
     @media (max-width: 650px) {
       display: none;
+    }
+  }
+
+  .ellipse {
+    position: absolute;
+    left: 0px;
+    bottom: -299px;
+    z-index: -4;
+
+    @media (max-width: 650px) {
+      left: 61%;
+      transform: translateX(-50%) rotate(-90deg);
+      bottom: -43px;
     }
   }
 }

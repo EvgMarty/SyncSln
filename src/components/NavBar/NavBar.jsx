@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
-import MenuBtn from '../../Ui/MenuBtn/MenuBtn';
-import Nav from '../Nav/Nav';
 import styles from './NavBar.module.scss';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Nav from '../Nav/Nav';
+import MenuBtn from '../../Ui/MenuBtn/MenuBtn';
 
 const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -26,7 +27,9 @@ const NavBar = () => {
     <nav className={styles.navBar}>
       <div className={styles.container}>
         <MenuBtn openMenu={openMenu} toggleMenu={toggleMenu} />
-        <img className={styles.logo} src="./img/logo.svg" alt="logo" />
+        <Link to="/">
+          <img className={styles.logo} src="./img/logo.svg" alt="logo" />
+        </Link>
         <Nav openMenu={openMenu} closeMenu={closeMenu} />
         <ul className={styles.leng}>
           <li>En</li>

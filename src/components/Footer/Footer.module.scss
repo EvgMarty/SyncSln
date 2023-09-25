@@ -18,7 +18,7 @@
     }
 
     @media (max-width: 650px) {
-      padding: 40px 20px 115px 20px;
+      padding: 40px 20px 115px 40px;
       flex-direction: column;
       align-content: center;
     }
@@ -37,7 +37,9 @@
       }
 
       li {
+        cursor: pointer;
         color: #fff;
+        width: 50px;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -57,7 +59,7 @@
       max-width: 414px;
       margin-top: 24px;
       display: flex;
-      column-gap: 70px;
+      column-gap: 50px;
       row-gap: 15px;
       flex-wrap: wrap;
 

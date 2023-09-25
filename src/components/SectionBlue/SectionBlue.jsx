@@ -5,12 +5,18 @@ const SectionBlue = ({ children }) => {
     <div className={styles.sectionBlue}>
       <img
         className={styles.chooseBgL}
-        src="./img/choose/chooseBgL.svg"
+        src="./img/bgBlu/L.svg"
         alt=""
       />
       <img
         className={styles.chooseBgR}
-        src="./img/choose/chooseBgR.svg"
+        src="./img/bgBlu/R.svg"
+        alt=""
+      />
+
+      <img
+        className={styles.cent}
+        src="./img/bgBlu/cent.svg"
         alt=""
       />
 
