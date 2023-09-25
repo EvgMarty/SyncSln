@@ -27,7 +27,7 @@
       max-width: 359px;
       margin-top: 24px;
       display: flex;
-      column-gap: 100px;
+      column-gap: 66px;
       row-gap: 15px;
       flex-wrap: wrap;
 
@@ -39,7 +39,7 @@
       li {
         cursor: pointer;
         color: #fff;
-        width: 50px;
+        width: 142px;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -50,7 +50,6 @@
 
         &:hover {
           opacity: 60%;
-          border-bottom: 1px solid white;
         }
       }
     }
@@ -83,8 +82,11 @@
 
         &:hover {
           opacity: 60%;
-          border-bottom: 1px solid white;
         }
+      }
+      
+      a{
+        text-transform: lowercase
       }
     }
 

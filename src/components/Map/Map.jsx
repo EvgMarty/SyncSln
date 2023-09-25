@@ -1,7 +1,6 @@
 import styles from './Map.module.scss';
 import ParagraphBl from '../ParagraphBl/ParagraphBl';
 import TitleBl from '../TitleBl/TitleBl';
-import GoogleMap from '../GoogleMap/GoogleMap';
 
 const Map = () => {
   return (
@@ -22,8 +21,9 @@ const Map = () => {
               <div className={styles.circle}>
                 <img src="./img/contacts/tag.svg" alt="" />
               </div>
-              <p>Schräderheide 55 48157</p>
-              <p>Münster Germany</p>
+              <p>Schräderheide 55</p>
+              <p>48157 Münster</p>
+              <p>Germany</p>
             </div>
           </li>
           <li>
@@ -52,13 +52,12 @@ const Map = () => {
               <div className={styles.circle}>
                 <img src="./img/contacts/clock.svg" alt="" />
               </div>
-              <a href="tel:+4915232061-840">+49 152 32 061-840</a>
-              <a href="tel:+4925176025-196">+49 251 76 025-196</a>
+              <a href="tel:+4925176025-196">+49 (0) 251 76 025 196</a>
             </div>
           </li>
         </ul>
         <div className={styles.mapWrap}>
-          <GoogleMap />
+          <img src="./img/contacts/map.svg" alt="map" />
         </div>
       </div>
     </div>

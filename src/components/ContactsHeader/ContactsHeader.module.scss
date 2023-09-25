@@ -45,16 +45,28 @@
     }
   }
 
-  .ellipse {
+  .gradient {
     position: absolute;
     left: 0px;
     bottom: -299px;
     z-index: -4;
 
-    @media (max-width: 650px) {
-      left: 61%;
-      transform: translateX(-50%) rotate(-90deg);
-      bottom: -43px;
+    @media (max-width: 859px) {
+      display: none;
+    }
+  }
+
+  .gradientMob {
+    position: absolute;
+    left: 52%;
+    transform: translateX(-50%);
+    bottom: -93px;
+    width: 192%;
+    z-index: -4;
+    display: none;
+
+    @media (max-width: 508px) {
+      display: block;
     }
   }
 }

@@ -1,8 +1,8 @@
+import styles from './Footer.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import { IoMdMail } from 'react-icons/io';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { BsFillTelephoneFill } from 'react-icons/bs';
-import styles from './Footer.module.scss';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -48,10 +48,10 @@ const Footer = () => {
               <div onClick={scrollToServices}>Services</div>
             </li>
             <li>
-              <div onClick={scrollToAboutUs}>Impressum</div>
+              <div onClick={scrollToAboutUs}>Imprint</div>
             </li>
             <li>
-              <div onClick={scrollToServices}>AGB</div>
+              <Link to="terms-of-service">Terms and conditions</Link>
             </li>
           </ul>
         </div>
@@ -73,7 +73,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Schräderheide 55 48157 Münster Germany
+                Schräderheide 55,48157 Münster Germany
               </a>
             </li>
           </ul>
@@ -87,9 +87,6 @@ const Footer = () => {
           <ul className={styles.linkList}>
             <li>
               <Link to="privacy-policy">Privacy Policy</Link>
-            </li>
-            <li>
-              <Link to="terms-of-service">Terms of Service</Link>
             </li>
           </ul>
         </div>

@@ -15,10 +15,17 @@ const ContactsHeader = () => {
         alt=""
       />
       <img
-        className={styles.ellipse}
-        src="./img/contacts/Ellipse.svg"
+        className={styles.gradient}
+        src="./img/contacts/gradient.svg"
         alt=""
       />
+
+      <img
+        className={styles.gradientMob}
+        src="./img/contacts/gradientMobile.svg"
+        alt=""
+      />
+
       <img className={styles.cloudL} src="./img/contacts/cloudL.svg" alt="" />
       <div className={styles.container}>
         <SiteNav page="Contacts" />
