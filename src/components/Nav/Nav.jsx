@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import styles from './Nav.module.scss';
 
 const Nav = ({ openMenu, closeMenu }) => {
@@ -36,8 +36,34 @@ const Nav = ({ openMenu, closeMenu }) => {
         </NavLink>
       </li>
       <li>
-        <div className={styles.link} onClick={scrollToServices}>
+        <div
+          className={styles.menuItem}
+          // onClick={scrollToServices}
+        >
           Services
+          <ul className={styles.subMenu}>
+            <li>
+              <Link onClick={() => closeMenu()} to="architecture-development">
+                Software Atchitecture
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => closeMenu()} to="cloud">
+                Cloud
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => closeMenu()} to="software-architecture">
+                AI/ML
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => closeMenu()} to="internet-of-things">
+                {' '}
+                loT
+              </Link>
+            </li>
+          </ul>
         </div>
       </li>
       <li>

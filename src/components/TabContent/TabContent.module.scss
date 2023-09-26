@@ -67,4 +67,8 @@
   line-height: normal;
   letter-spacing: -0.88px;
   text-transform: capitalize;
+
+  @media (max-width: 650px) {
+    height: 90px;
+  }
 }
