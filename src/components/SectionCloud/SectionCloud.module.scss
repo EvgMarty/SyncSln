@@ -1,0 +1,32 @@
+.sectionBlue {
+  position: relative;
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    position: relative;
+
+    @media (max-width: 768px) {
+      padding: 0 25px;
+    }
+  }
+
+  .img {
+    position: absolute;
+    left: 0;
+    top: -688px;
+    width: 100%;
+    
+  }
+
+  .cloudL {
+    position: absolute;
+    left: -61px;
+    top: 254px;
+  }
+
+  .cloudR {
+    position: absolute;
+    right: -63px;
+    top: 7px;
+  }
+}

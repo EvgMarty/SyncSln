@@ -8,4 +8,4 @@ const SectionSimple = ({ children }) => {
   );
 };
 
-export default SectionSimple ;
+export default SectionSimple;

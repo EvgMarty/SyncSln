@@ -1,0 +1,70 @@
+//контейнер
+.contentWrap {
+  position: relative;
+  background: #fff;
+  text-align: center;
+  width: 100%;
+  margin: 15px 0 220px 0;
+
+  &_hidden {
+    display: none;
+  }
+
+  @media (max-width: 650px) {
+    margin: 0 0 50px 0;
+  }
+}
+
+// параграф
+.text {
+  max-width: 769px;
+
+  display: inline-block;
+  margin-top: 50px;
+  color: #003a74;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+}
+
+//список
+.flexList {
+  padding: 55px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  row-gap: 55px;
+  column-gap: 100px;
+
+  @media (max-width: 650px) {
+    row-gap: 25px;
+  }
+}
+
+//контент списка
+.flexContent {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+  background: #fefefe;
+  box-shadow: 0px 2px 20px 0px rgba(0, 114, 161, 0.07);
+  width: 280px;
+  height: 75px;
+
+  color: #00a1e4;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.88px;
+  text-transform: capitalize;
+}

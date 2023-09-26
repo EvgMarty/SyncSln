@@ -3,12 +3,12 @@
   display: flex;
   column-gap: 55px;
   align-items: center;
-  
+  z-index: 2;
 
   cursor: pointer;
   max-width: 554px;
   min-height: 165px;
-  max-height:150px;
+  max-height: 164px;
   padding: 40px 60px;
   border-radius: 7px;
 
@@ -17,7 +17,9 @@
   box-shadow: 0px 4px 30px 0px rgba(0, 149, 211, 0.35);
 
   @media (max-width: 650px) {
-    max-height: 231px;
+    column-gap: 20px;
+    max-height: 178px;
+    padding: 21px 18px;
   }
 
   // если класс актив
@@ -26,17 +28,18 @@
     display: flex;
     column-gap: 55px;
     align-items: center;
+    z-index: 2;
 
     cursor: pointer;
     max-width: 554px;
     min-height: 165px;
-    max-height: 231px;
+    max-height: 164px;
     padding: 40px 60px;
     border-radius: 7px;
 
     color: white;
     background: linear-gradient(180deg, #1873ce -0.77%, #053b72 100%);
-    box-shadow: 0px 4px 30px 0px rgba(0, 149, 211, 0.35);
+    box-shadow: 0px 2px 20px 0px rgba(0, 114, 161, 0.07);
 
     .cardTitle {
       border-bottom: solid 1px #fff;
@@ -49,6 +52,12 @@
     .circle {
       transform: rotate(90deg);
       background: #003a74;
+    }
+
+    @media (max-width: 650px) {
+      column-gap: 20px;
+      max-height: 178px;
+      padding: 21px 18px;
     }
   }
 
@@ -120,7 +129,7 @@
   position: relative;
 }
 
-.corner{
+.corner {
   position: absolute;
   height: 100%;
   right: 0;
