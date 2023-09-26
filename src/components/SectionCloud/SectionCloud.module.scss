@@ -15,18 +15,23 @@
     left: 0;
     top: -688px;
     width: 100%;
-    
   }
 
   .cloudL {
     position: absolute;
     left: -61px;
     top: 254px;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .cloudR {
     position: absolute;
     right: -63px;
     top: 7px;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }

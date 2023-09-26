@@ -32,7 +32,7 @@ const Map = () => {
               <div className={styles.circle}>
                 <img src="./img/contacts/mail.svg" alt="" />
               </div>
-              <p>info@syncsln.com</p>
+              <a href="mailto:info@syncsln.com">info@syncsln.com</a>
             </div>
           </li>
           <li>

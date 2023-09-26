@@ -74,9 +74,7 @@
       }
 
       &::before {
-        content: '✔';
-        color: white;
-        text-align: center;
+        content: '';
         position: absolute;
         border-radius: 50%;
         left: -45px;
@@ -84,6 +82,19 @@
         background: #003a74;
         width: 27px;
         height: 27px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        left: -38px;
+        top: 12px;
+        background: url(../../../public/img/header/V.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 0;
+        width: 16px;
+        height: 12px;
       }
     }
   }

@@ -1,8 +1,5 @@
 import styles from './Footer.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
-import { IoMdMail } from 'react-icons/io';
-import { FaMapMarkerAlt } from 'react-icons/fa';
-import { BsFillTelephoneFill } from 'react-icons/bs';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -59,15 +56,15 @@ const Footer = () => {
           <div className={styles.titleFooter}>Contacts</div>
           <ul className={styles.siteContacts}>
             <li>
-              <IoMdMail />
-              <a href="mailto:info@syncsln.com">info@syncsln.com</a>
+              <img src="./img/contacts/mailFooter.svg" alt="" />
+              <a className={styles.textTerans} href="mailto:info@syncsln.com">info@syncsln.com</a>
             </li>
             <li>
-              <BsFillTelephoneFill />
+              <img src="./img/contacts/num.svg" alt="" />
               <a href="tel:+4925176025-196">+49 251 76 025-196</a>
             </li>
             <li>
-              <FaMapMarkerAlt />
+              <img src="./img/contacts/teg.svg" alt="" />
               <a
                 href="https://www.google.com/maps/place/Schr%C3%A4derheide+55,+48157+M%C3%BCnster,+Germany/@51.9824546,7.5668067,12.31z/data=!4m6!3m5!1s0x47b9bbd61d53f7df:0xf6fa81a1b836ef12!8m2!3d52.0268112!4d7.6694391!16s%2Fg%2F11cpb45y86?hl=en&entry=ttu"
                 target="_blank"

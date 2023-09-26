@@ -1,0 +1,83 @@
+[33mcommit 0468cf64470dfb83ec398d17e712ab3641156d9e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Tue Sep 26 22:00:03 2023 +0300
+
+    fixed menu
+
+[33mcommit 2f9d94f67ac9173525ea87ba6c656e05acc93862[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Tue Sep 26 17:28:14 2023 +0300
+
+    filled pages added functionality to tabs and content
+
+[33mcommit d839027ea7e148666b76d6ad0779d6bc6d8b65bc[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Mon Sep 25 23:09:44 2023 +0300
+
+    fics bag
+
+[33mcommit f94e77f9f1968c8dde5ae624910de407a01ec7d7[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Mon Sep 25 22:00:37 2023 +0300
+
+    new 4 pages and tabCard
+
+[33mcommit 6e7486c7e69e5297aaaa9429be94b465cb2b5e89[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Sun Sep 24 22:49:43 2023 +0300
+
+    new 4 page and add tabCard
+
+[33mcommit 9cf67630294507ad771fde8240bc38b2286b3359[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Sat Sep 23 22:51:32 2023 +0300
+
+    add two new peages
+
+[33mcommit 7715a2bf18428ad7cdf47e202b0dbc07f98e90d1[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Sat Sep 23 12:10:05 2023 +0300
+
+    datalies and new section
+
+[33mcommit 38b613e46b37c3c0b8fa8dca3069fc0ab41d92bd[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Sat Sep 23 00:52:16 2023 +0300
+
+    add cloud and header img
+
+[33mcommit 5969f178753b2b7d18af880fded922fdbbe8dbad[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Fri Sep 22 22:31:43 2023 +0300
+
+    new contact page and added adaptive mobile and tablet
+
+[33mcommit 1e6b537eab0ac37890f8483c139b1cdb3807ff77[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Fri Sep 22 16:59:31 2023 +0300
+
+    new form and chechbox
+
+[33mcommit 54eaf8fa29e860d2247a5a998e78c7deb859ef5f[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Thu Sep 21 23:32:34 2023 +0300
+
+    add card sevicess
+
+[33mcommit 701edd85d4fe50d4c570b0d7eee60d3662fe264f[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Thu Sep 21 18:52:11 2023 +0300
+
+    mobile adaptive
+
+[33mcommit a18ca5fa893c268c0623780efb1279f243decec3[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Thu Sep 21 13:34:46 2023 +0300
+
+    made the navigation in the project
+
+[33mcommit d4960a86e91b8348c517ca505441333dda1d1f35[m
+Author: EvgMarty <mrtevgeniy@gmail.com>
+Date:   Tue Sep 19 14:34:55 2023 +0300
+
+    Initialize project using Create React App
