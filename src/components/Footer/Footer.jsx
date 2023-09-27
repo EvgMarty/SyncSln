@@ -36,7 +36,7 @@ const Footer = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <div onClick={scrollToServices}>Company</div>
+              <div onClick={scrollToAboutUs}>Company</div>
             </li>
             <li>
               <Link to="contacts">Contacts</Link>
@@ -57,7 +57,9 @@ const Footer = () => {
           <ul className={styles.siteContacts}>
             <li>
               <img src="./img/contacts/mailFooter.svg" alt="" />
-              <a className={styles.textTerans} href="mailto:info@syncsln.com">info@syncsln.com</a>
+              <a className={styles.textTerans} href="mailto:info@syncsln.com">
+                info@syncsln.com
+              </a>
             </li>
             <li>
               <img src="./img/contacts/num.svg" alt="" />

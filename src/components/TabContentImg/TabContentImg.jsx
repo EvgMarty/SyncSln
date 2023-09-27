@@ -1,8 +1,8 @@
-import styles from './TabContent.module.scss';
+import styles from './TabContentImg.module.scss';
 import TitleBl from '../TitleBl/TitleBl';
 
-const TabContent = (props) => {
-  const { text, title, list, active } = props;
+const TabContentImg = (props) => {
+  const { text, title, content, active } = props;
   return (
     <div
       className={
@@ -13,11 +13,11 @@ const TabContent = (props) => {
       <span className={styles.text}>{text}</span>
 
       <ul className={styles.flexList}>
-        {list.map((li, index) => {
+        {content.map((item, index) => {
           return (
             <li className={styles.flexContent} key={index}>
-              <img className="" src="" alt="" />
-              {li}
+              <img className={styles.liImg} src={item.img} alt="" />
+              {item.text}
             </li>
           );
         })}
@@ -26,4 +26,4 @@ const TabContent = (props) => {
   );
 };
 
-export default TabContent;
+export default TabContentImg;

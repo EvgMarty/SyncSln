@@ -6,17 +6,45 @@ import HeaderArchDev from '../../../components/HeaderArchDev/HeaderArchDev';
 import TabContent from '../../../components/TabContent/TabContent';
 
 import { useTabCardState } from '../../../utils/useTabCardState';
+import TabContentImg from '../../../components/TabContentImg/TabContentImg';
 
 const webDev = [
-  '.Net',
-  'Java',
-  'JS',
-  'HTML, CSS',
-  'Angular',
-  'SWIFT',
-  'React',
-  'Node JS',
-  'Xamarin',
+  {
+    img: './img/tabContent/NET.svg',
+    text: '.Net',
+  },
+  {
+    img: './img/tabContent/JAVA.svg',
+    text: 'Java',
+  },
+  {
+    img: './img/tabContent/JS.svg',
+    text: 'JS',
+  },
+  {
+    img: './img/tabContent/HTML.svg',
+    text: 'HTML, CSS',
+  },
+  {
+    img: './img/tabContent/ANGULAR.svg',
+    text: 'Angular',
+  },
+  {
+    img: './img/tabContent/SWIFT.svg',
+    text: 'SWIFT',
+  },
+  {
+    img: './img/tabContent/REACT.svg',
+    text: 'React',
+  },
+  {
+    img: './img/tabContent/NODE.svg',
+    text: '.Node JS',
+  },
+  {
+    img: './img/tabContent/XAMARIN.svg',
+    text: 'Xamarin',
+  },
 ];
 
 const softArc = [
@@ -28,7 +56,7 @@ const softArc = [
 ];
 
 const ArchitectureDevelopment = () => {
-   const { active, handleCardClick } = useTabCardState(1);
+  const { active, handleCardClick } = useTabCardState(1);
 
   return (
     <>
@@ -54,10 +82,10 @@ const ArchitectureDevelopment = () => {
           />
         </WrapFlex>
 
-        <TabContent
+        <TabContentImg
           title="Web Development"
           text="We develop Web and mobile applications, digital platforms, enterprise applications using following tech-stack"
-          list={webDev}
+          content={webDev}
           active={active === 1}
         />
         <TabContent
