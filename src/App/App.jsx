@@ -22,7 +22,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="contacts" element={<Contacts />} />
               <Route path="privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="terms-of-service" element={<TermsService />} />
+              <Route path="terms-and-conditions" element={<TermsService />} />
 
               <Route
                 path="architecture-development"

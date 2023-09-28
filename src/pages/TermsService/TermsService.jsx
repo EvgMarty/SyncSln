@@ -12,12 +12,12 @@ const TermsService = () => {
   return (
     <>
       <HeaderCoocePrivac
-        page="Terms of Service"
+        page="Terms and Conditions"
         img="./img/coocePrivac/termHead.svg"
       />
       <SectionPolicy>
         <div className={styles.wrap}>
-          <TitleBl>Cookie Policy</TitleBl>
+          <TitleBl>Terms and Conditions</TitleBl>
           <div className={styles.textWrap}>
             <ParagraphBl>
               We use cookies to help improve your experience of our website at

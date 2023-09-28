@@ -48,7 +48,7 @@ const Footer = () => {
               <div onClick={scrollToAboutUs}>Imprint</div>
             </li>
             <li>
-              <Link to="terms-of-service">Terms and conditions</Link>
+              <Link to="terms-and-conditions">Terms and conditions</Link>
             </li>
           </ul>
         </div>
